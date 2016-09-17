@@ -13056,3 +13056,1819 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004349s ]
 INFO: [ app_end ] --END-- [ RunTime:0.004418s ]
 
+[ 2016-09-16T23:03:38+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.045551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.049712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.049887s ]
+
+[ 2016-09-16T23:03:39+08:00 ] 127.0.0.1 /index.php/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003563s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.252888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.252973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.037738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.037808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020734s ]
+
+[ 2016-09-16T23:03:44+08:00 ] 127.0.0.1 /index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004788s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:0.2763s ]
+SQL: SELECT * FROM `wb_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0083s ]
+
+[ 2016-09-16T23:03:47+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003548s ]
+SQL: SHOW COLUMNS FROM `wb_follow` [ RunTime:0.0295s ]
+SQL: SELECT `follow` FROM `wb_follow` WHERE `fans` = 2  [ RunTime:0.0265s ]
+SQL: SHOW COLUMNS FROM `wb_weibo` [ RunTime:0.0286s ]
+SQL: SHOW COLUMNS FROM `wb_userinfo` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `wb_picture` [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid LEFT JOIN wb_picture picture ON weibo.id = picture.wid WHERE weibo.uid IN ('2') LIMIT 1   [ RunTime:0.0300s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.time AS time,weibo.keep AS keep,weibo.turnnum AS turnnum,weibo.comment AS comment,weibo.uid AS uid,userinfo.username AS username,userinfo.headimgs AS face,picture.mini AS mini,picture.medium AS medium,picture.max AS max FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid LEFT JOIN wb_picture picture ON weibo.id = picture.wid WHERE weibo.uid IN ('2') ORDER BY weibo.time desc LIMIT 0,20   [ RunTime:0.0191s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+SQL: SELECT `style` FROM `wb_userinfo` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `username` FROM `wb_userinfo` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wb_group` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `wb_group` WHERE `uid` = 2  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wb_group` WHERE `uid` = 2  [ RunTime:0.0004s ]
+SQL: SELECT `username`,`headimgm` AS `face`,`follow`,`fans`,`article`,`uid` FROM `wb_userinfo` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `follow` FROM `wb_follow` WHERE `fans` = 2  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: friend F:\weibo\Index\Runtime\Cache\Home\20ef0c31aa8ae73946d7fed8083ca825.php 第 442 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\weibo\Index\Runtime\Cache\Home\20ef0c31aa8ae73946d7fed8083ca825.php 第 442 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.108147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003818s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003862s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003629s ]
+
+[ 2016-09-16T23:03:49+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004518s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004645s ]
+
+[ 2016-09-16T23:03:56+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003814s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004796s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004870s ]
+
+[ 2016-09-16T23:04:02+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003660s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004669s ]
+
+[ 2016-09-16T23:04:08+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003691s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003957s ]
+
+[ 2016-09-16T23:04:14+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003582s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013462s ]
+
+[ 2016-09-16T23:04:20+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005752s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003788s ]
+
+[ 2016-09-16T23:04:27+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004494s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003660s ]
+
+[ 2016-09-16T23:04:34+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003495s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015356s ]
+
+[ 2016-09-16T23:04:41+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004314s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011999s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012176s ]
+
+[ 2016-09-16T23:04:48+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003637s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004770s ]
+
+[ 2016-09-16T23:04:55+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003723s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013250s ]
+
+[ 2016-09-16T23:05:02+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004374s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004620s ]
+
+[ 2016-09-16T23:05:09+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005041s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005601s ]
+
+[ 2016-09-16T23:05:16+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003699s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005616s ]
+
+[ 2016-09-16T23:05:23+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003511s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014894s ]
+
+[ 2016-09-16T23:05:30+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003516s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006072s ]
+
+[ 2016-09-16T23:05:37+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003405s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006969s ]
+
+[ 2016-09-16T23:05:44+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003939s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009419s ]
+
+[ 2016-09-16T23:05:51+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004979s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003831s ]
+
+[ 2016-09-16T23:05:58+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003701s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006616s ]
+
+[ 2016-09-16T23:06:05+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003881s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007905s ]
+
+[ 2016-09-16T23:06:12+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003830s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010029s ]
+
+[ 2016-09-16T23:06:19+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004254s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003792s ]
+
+[ 2016-09-16T23:06:26+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003613s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012493s ]
+
+[ 2016-09-16T23:06:33+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003644s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004141s ]
+
+[ 2016-09-16T23:06:40+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003491s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011756s ]
+
+[ 2016-09-16T23:06:47+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003529s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009498s ]
+
+[ 2016-09-16T23:06:54+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003718s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006497s ]
+
+[ 2016-09-16T23:07:01+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004593s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004076s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004131s ]
+
+[ 2016-09-16T23:07:08+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003479s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013199s ]
+
+[ 2016-09-16T23:07:15+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003642s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013169s ]
+
+[ 2016-09-16T23:07:22+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004597s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011626s ]
+
+[ 2016-09-16T23:07:29+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003508s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016849s ]
+
+[ 2016-09-16T23:07:36+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003743s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007858s ]
+
+[ 2016-09-16T23:07:43+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003598s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013808s ]
+
+[ 2016-09-16T23:07:50+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003487s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004097s ]
+
+[ 2016-09-16T23:07:57+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004795s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004429s ]
+
+[ 2016-09-16T23:08:04+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003454s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012427s ]
+
+[ 2016-09-16T23:08:11+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003876s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003686s ]
+
+[ 2016-09-16T23:08:18+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003736s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003753s ]
+
+[ 2016-09-16T23:08:25+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003680s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006405s ]
+
+[ 2016-09-16T23:08:32+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003404s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012338s ]
+
+[ 2016-09-16T23:08:39+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003679s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005294s ]
+
+[ 2016-09-16T23:08:46+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003480s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012710s ]
+
+[ 2016-09-16T23:08:53+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004397s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011678s ]
+
+[ 2016-09-16T23:09:00+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003921s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004442s ]
+
+[ 2016-09-16T23:09:07+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006529s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016125s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016252s ]
+
+[ 2016-09-16T23:09:14+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003859s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009412s ]
+
+[ 2016-09-16T23:09:21+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003554s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004944s ]
+
+[ 2016-09-16T23:09:28+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004463s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005984s ]
+
+[ 2016-09-16T23:09:36+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006054s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006063s ]
+
+[ 2016-09-16T23:09:42+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003730s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004693s ]
+
+[ 2016-09-16T23:09:49+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004077s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014929s ]
+
+[ 2016-09-16T23:09:56+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004686s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012640s ]
+
+[ 2016-09-16T23:10:03+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003670s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005893s ]
+
+[ 2016-09-16T23:10:10+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003678s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004903s ]
+
+[ 2016-09-16T23:10:17+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006084s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007010s ]
+
+[ 2016-09-16T23:10:24+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003873s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012203s ]
+
+[ 2016-09-16T23:10:31+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003842s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005758s ]
+
+[ 2016-09-16T23:10:38+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003849s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005508s ]
+
+[ 2016-09-16T23:10:45+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003550s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005381s ]
+
+[ 2016-09-16T23:10:52+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004443s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003785s ]
+
+[ 2016-09-16T23:10:59+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004983s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004869s ]
+
+[ 2016-09-16T23:11:06+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003495s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012217s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012401s ]
+
+[ 2016-09-16T23:11:14+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007948s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004062s ]
+
+[ 2016-09-16T23:11:20+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003451s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013227s ]
+
+[ 2016-09-16T23:11:28+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006083s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003755s ]
+
+[ 2016-09-16T23:11:34+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004719s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009774s ]
+
+[ 2016-09-16T23:11:41+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003804s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006652s ]
+
+[ 2016-09-16T23:11:48+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003864s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006692s ]
+
+[ 2016-09-16T23:11:55+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003476s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005514s ]
+
+[ 2016-09-16T23:12:02+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003805s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003762s ]
+
+[ 2016-09-16T23:12:09+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005624s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014239s ]
+
+[ 2016-09-16T23:12:16+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003572s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014233s ]
+
+[ 2016-09-16T23:12:23+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003924s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014870s ]
+
+[ 2016-09-16T23:12:30+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003662s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006331s ]
+
+[ 2016-09-16T23:12:37+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004080s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015668s ]
+
+[ 2016-09-16T23:12:45+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004660s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.035291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.035399s ]
+
+[ 2016-09-16T23:12:51+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003507s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006747s ]
+
+[ 2016-09-16T23:12:58+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003504s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012968s ]
+
+[ 2016-09-16T23:13:05+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004152s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005171s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005253s ]
+
+[ 2016-09-16T23:13:12+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003460s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005473s ]
+
+[ 2016-09-16T23:13:19+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003521s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003918s ]
+
+[ 2016-09-16T23:13:26+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004470s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005850s ]
+
+[ 2016-09-16T23:13:33+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004057s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-09-16T23:13:40+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004027s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.058174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.058280s ]
+
+[ 2016-09-16T23:13:47+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003943s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014758s ]
+
+[ 2016-09-16T23:13:54+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003465s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007594s ]
+
+[ 2016-09-16T23:14:01+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003758s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010781s ]
+
+[ 2016-09-16T23:14:08+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003476s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013416s ]
+
+[ 2016-09-16T23:14:15+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005149s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011729s ]
+
+[ 2016-09-16T23:14:22+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003469s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012174s ]
+
+[ 2016-09-16T23:14:30+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003656s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004135s ]
+
+[ 2016-09-16T23:14:36+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004661s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011168s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011317s ]
+
+[ 2016-09-16T23:14:43+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005808s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004657s ]
+
+[ 2016-09-16T23:14:50+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003678s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013128s ]
+
+[ 2016-09-16T23:14:57+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003550s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003764s ]
+
+[ 2016-09-16T23:15:04+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004208s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013144s ]
+
+[ 2016-09-16T23:15:11+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003473s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005363s ]
+
+[ 2016-09-16T23:15:18+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003803s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004396s ]
+
+[ 2016-09-16T23:15:25+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003840s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015285s ]
+
+[ 2016-09-16T23:15:32+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003513s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011641s ]
+
+[ 2016-09-16T23:15:39+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005576s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003680s ]
+
+[ 2016-09-16T23:15:46+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003501s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012002s ]
+
+[ 2016-09-16T23:15:53+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003537s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012209s ]
+
+[ 2016-09-16T23:16:00+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003581s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011762s ]
+
+[ 2016-09-16T23:16:07+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003545s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011764s ]
+
+[ 2016-09-16T23:16:14+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004259s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003652s ]
+
+[ 2016-09-16T23:16:21+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003495s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003975s ]
+
+[ 2016-09-16T23:16:28+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003767s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007195s ]
+
+[ 2016-09-16T23:16:35+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003482s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014973s ]
+
+[ 2016-09-16T23:16:42+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003470s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006177s ]
+
+[ 2016-09-16T23:16:49+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003620s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004170s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004232s ]
+
+[ 2016-09-16T23:16:56+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004128s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011862s ]
+
+[ 2016-09-16T23:17:03+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003499s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003801s ]
+
+[ 2016-09-16T23:17:10+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003962s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003758s ]
+
+[ 2016-09-16T23:17:17+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003552s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012226s ]
+
+[ 2016-09-16T23:17:24+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003726s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011928s ]
+
+[ 2016-09-16T23:17:31+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004154s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012962s ]
+
+[ 2016-09-16T23:17:38+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003618s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011871s ]
+
+[ 2016-09-16T23:17:45+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003471s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004175s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004257s ]
+
+[ 2016-09-16T23:17:52+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003751s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011612s ]
+
+[ 2016-09-16T23:17:59+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003844s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012931s ]
+
+[ 2016-09-16T23:18:06+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006010s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012850s ]
+
+[ 2016-09-16T23:18:13+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003960s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007141s ]
+
+[ 2016-09-16T23:18:20+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003728s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003856s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003918s ]
+
+[ 2016-09-16T23:18:27+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003654s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012633s ]
+
+[ 2016-09-16T23:18:34+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003492s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004209s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004277s ]
+
+[ 2016-09-16T23:18:41+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004401s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013054s ]
+
+[ 2016-09-16T23:18:48+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004310s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003833s ]
+
+[ 2016-09-16T23:18:55+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003887s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003778s ]
+
+[ 2016-09-16T23:19:02+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003532s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005182s ]
+
+[ 2016-09-16T23:19:09+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003971s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006142s ]
+
+[ 2016-09-16T23:19:16+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006943s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005353s ]
+

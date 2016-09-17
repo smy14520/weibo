@@ -119,10 +119,10 @@
             <span class="close fright"></span>
         </div>
         <ul>
-            <li style='background:url(/Public/Images/default.jpg) no-repeat;' theme='default'></li>
-            <li style='background:url(/Public/Images/style2.jpg) no-repeat;' theme='style2'></li>
-            <li style='background:url(/Public/Images/style3.jpg) no-repeat;' theme='style3'></li>
-            <li style='background:url(/Public/Images/style4.jpg) no-repeat;' theme='style4'></li>
+            <li style='background:url(/Public/images/default.jpg) no-repeat;' theme='default'></li>
+            <li style='background:url(/Public/images/style2.jpg) no-repeat;' theme='style2'></li>
+            <li style='background:url(/Public/images/style3.jpg) no-repeat;' theme='style3'></li>
+            <li style='background:url(/Public/images/style4.jpg) no-repeat;' theme='style4'></li>
         </ul>
         <div class='model_operat'>
             <span class='model_save'>保存</span>
@@ -225,7 +225,7 @@
                         <img src="
                         <?php if($v["face"]): ?>/Uploads/Face/<?php echo ($v["face"]); ?>
                         <?php else: ?>
-                            /Public/Images/noface.gif<?php endif; ?>" width='50' height='50'/>
+                            /Public/images/noface.gif<?php endif; ?>" width='50' height='50'/>
                     </a>
                 </div>
                 <div class="wb_cons">
@@ -280,7 +280,7 @@
                     </div>
                 <!--=====回复框=====-->
                     <div class='comment_load hidden'>
-                        <img src="/Public/Images/loading.gif">评论加载中，请稍候...
+                        <img src="/Public/images/loading.gif">评论加载中，请稍候...
                     </div>
                     <div class='comment_list hidden'>
                         <textarea name="" sign='comment<?php echo ($key); ?>'></textarea>
@@ -306,7 +306,7 @@
                         <img src="
                         <?php if($v["face"]): ?>/Uploads/Face/<?php echo ($v["face"]); ?>
                         <?php else: ?>
-                            /Public/Images/noface.gif<?php endif; ?>" width='50' height='50'/>
+                            /Public/images/noface.gif<?php endif; ?>" width='50' height='50'/>
                     </a>
                 </div>
                 <div class="wb_cons">
@@ -392,7 +392,7 @@
                     </div>
                     <!--回复框-->
                     <div class='comment_load hidden'>
-                        <img src="/Public/Images/loading.gif">评论加载中，请稍候...
+                        <img src="/Public/images/loading.gif">评论加载中，请稍候...
                     </div>
                     <div class='comment_list hidden'>
                         <textarea name="" sign='comment<?php echo ($key); ?>'></textarea>
@@ -420,7 +420,7 @@
 <?php $where = array("uid" => $_SESSION["uid"]);$field = array("username", "headimgm" => "face", "follow", "fans", "article", "uid");$userinfo = M("userinfo")->where($where)->field($field)->find();extract($userinfo);?><dl class="user_face">
         <dt>
             <a href="<?php echo U('/' . $uid);?>">
-                <img src="<?php if($face): ?>/Uploads/Face/<?php echo ($face); else: ?>/Public/Images/noface.gif<?php endif; ?>" width='80' height='80' alt="<?php echo ($username); ?>" />
+                <img src="<?php if($face): ?>/Uploads/Face/<?php echo ($face); else: ?>/Public/images/noface.gif<?php endif; ?>" width='80' height='80' alt="<?php echo ($username); ?>" />
             </a>
         </dt>
         <dd>
@@ -443,7 +443,7 @@
                         <dl>
                             <dt>
                                 <a href="<?php echo U('/' . $uid);?>">
-                                    <img src="<?php if($face): ?>/Uploads/Face/<?php echo ($face); else: ?>/Public/Images/noface.gif<?php endif; ?>" width='30' height='30'/>
+                                    <img src="<?php if($face): ?>/Uploads/Face/<?php echo ($face); else: ?>/Public/images/noface.gif<?php endif; ?>" width='30' height='30'/>
                                 </a>
                             </dt>
                             <dd><a href="<?php echo U('/' . $uid);?>"><?php echo ($username); ?></a></dd>
@@ -524,54 +524,54 @@
             <span class='close fright'></span>
         </div>
         <ul>
-            <li><img src="/Public/Images/phiz/hehe.gif" alt="呵呵" title="呵呵" /></li>
-            <li><img src="/Public/Images/phiz/xixi.gif" alt="嘻嘻" title="嘻嘻" /></li>
-            <li><img src="/Public/Images/phiz/haha.gif" alt="哈哈" title="哈哈" /></li>
-            <li><img src="/Public/Images/phiz/keai.gif" alt="可爱" title="可爱" /></li>
-            <li><img src="/Public/Images/phiz/kelian.gif" alt="可怜" title="可怜" /></li>
-            <li><img src="/Public/Images/phiz/wabisi.gif" alt="挖鼻屎" title="挖鼻屎" /></li>
-            <li><img src="/Public/Images/phiz/chijing.gif" alt="吃惊" title="吃惊" /></li>
-            <li><img src="/Public/Images/phiz/haixiu.gif" alt="害羞" title="害羞" /></li>
-            <li><img src="/Public/Images/phiz/jiyan.gif" alt="挤眼" title="挤眼" /></li>
-            <li><img src="/Public/Images/phiz/bizui.gif" alt="闭嘴" title="闭嘴" /></li>
-            <li><img src="/Public/Images/phiz/bishi.gif" alt="鄙视" title="鄙视" /></li>
-            <li><img src="/Public/Images/phiz/aini.gif" alt="爱你" title="爱你" /></li>
-            <li><img src="/Public/Images/phiz/lei.gif" alt="泪" title="泪" /></li>
-            <li><img src="/Public/Images/phiz/touxiao.gif" alt="偷笑" title="偷笑" /></li>
-            <li><img src="/Public/Images/phiz/qinqin.gif" alt="亲亲" title="亲亲" /></li>
-            <li><img src="/Public/Images/phiz/shengbin.gif" alt="生病" title="生病" /></li>
-            <li><img src="/Public/Images/phiz/taikaixin.gif" alt="太开心" title="太开心" /></li>
-            <li><img src="/Public/Images/phiz/ldln.gif" alt="懒得理你" title="懒得理你" /></li>
-            <li><img src="/Public/Images/phiz/youhenhen.gif" alt="右哼哼" title="右哼哼" /></li>
-            <li><img src="/Public/Images/phiz/zuohenhen.gif" alt="左哼哼" title="左哼哼" /></li>
-            <li><img src="/Public/Images/phiz/xiu.gif" alt="嘘" title="嘘" /></li>
-            <li><img src="/Public/Images/phiz/shuai.gif" alt="衰" title="衰" /></li>
-            <li><img src="/Public/Images/phiz/weiqu.gif" alt="委屈" title="委屈" /></li>
-            <li><img src="/Public/Images/phiz/tu.gif" alt="吐" title="吐" /></li>
-            <li><img src="/Public/Images/phiz/dahaqian.gif" alt="打哈欠" title="打哈欠" /></li>
-            <li><img src="/Public/Images/phiz/baobao.gif" alt="抱抱" title="抱抱" /></li>
-            <li><img src="/Public/Images/phiz/nu.gif" alt="怒" title="怒" /></li>
-            <li><img src="/Public/Images/phiz/yiwen.gif" alt="疑问" title="疑问" /></li>
-            <li><img src="/Public/Images/phiz/canzui.gif" alt="馋嘴" title="馋嘴" /></li>
-            <li><img src="/Public/Images/phiz/baibai.gif" alt="拜拜" title="拜拜" /></li>
-            <li><img src="/Public/Images/phiz/sikao.gif" alt="思考" title="思考" /></li>
-            <li><img src="/Public/Images/phiz/han.gif" alt="汗" title="汗" /></li>
-            <li><img src="/Public/Images/phiz/kun.gif" alt="困" title="困" /></li>
-            <li><img src="/Public/Images/phiz/shuijiao.gif" alt="睡觉" title="睡觉" /></li>
-            <li><img src="/Public/Images/phiz/qian.gif" alt="钱" title="钱" /></li>
-            <li><img src="/Public/Images/phiz/shiwang.gif" alt="失望" title="失望" /></li>
-            <li><img src="/Public/Images/phiz/ku.gif" alt="酷" title="酷" /></li>
-            <li><img src="/Public/Images/phiz/huaxin.gif" alt="花心" title="花心" /></li>
-            <li><img src="/Public/Images/phiz/heng.gif" alt="哼" title="哼" /></li>
-            <li><img src="/Public/Images/phiz/guzhang.gif" alt="鼓掌" title="鼓掌" /></li>
-            <li><img src="/Public/Images/phiz/yun.gif" alt="晕" title="晕" /></li>
-            <li><img src="/Public/Images/phiz/beishuang.gif" alt="悲伤" title="悲伤" /></li>
-            <li><img src="/Public/Images/phiz/zuakuang.gif" alt="抓狂" title="抓狂" /></li>
-            <li><img src="/Public/Images/phiz/heixian.gif" alt="黑线" title="黑线" /></li>
-            <li><img src="/Public/Images/phiz/yinxian.gif" alt="阴险" title="阴险" /></li>
-            <li><img src="/Public/Images/phiz/numa.gif" alt="怒骂" title="怒骂" /></li>
-            <li><img src="/Public/Images/phiz/xin.gif" alt="心" title="心" /></li>
-            <li><img src="/Public/Images/phiz/shuangxin.gif" alt="伤心" title="伤心" /></li>
+            <li><img src="/Public/images/phiz/hehe.gif" alt="呵呵" title="呵呵" /></li>
+            <li><img src="/Public/images/phiz/xixi.gif" alt="嘻嘻" title="嘻嘻" /></li>
+            <li><img src="/Public/images/phiz/haha.gif" alt="哈哈" title="哈哈" /></li>
+            <li><img src="/Public/images/phiz/keai.gif" alt="可爱" title="可爱" /></li>
+            <li><img src="/Public/images/phiz/kelian.gif" alt="可怜" title="可怜" /></li>
+            <li><img src="/Public/images/phiz/wabisi.gif" alt="挖鼻屎" title="挖鼻屎" /></li>
+            <li><img src="/Public/images/phiz/chijing.gif" alt="吃惊" title="吃惊" /></li>
+            <li><img src="/Public/images/phiz/haixiu.gif" alt="害羞" title="害羞" /></li>
+            <li><img src="/Public/images/phiz/jiyan.gif" alt="挤眼" title="挤眼" /></li>
+            <li><img src="/Public/images/phiz/bizui.gif" alt="闭嘴" title="闭嘴" /></li>
+            <li><img src="/Public/images/phiz/bishi.gif" alt="鄙视" title="鄙视" /></li>
+            <li><img src="/Public/images/phiz/aini.gif" alt="爱你" title="爱你" /></li>
+            <li><img src="/Public/images/phiz/lei.gif" alt="泪" title="泪" /></li>
+            <li><img src="/Public/images/phiz/touxiao.gif" alt="偷笑" title="偷笑" /></li>
+            <li><img src="/Public/images/phiz/qinqin.gif" alt="亲亲" title="亲亲" /></li>
+            <li><img src="/Public/images/phiz/shengbin.gif" alt="生病" title="生病" /></li>
+            <li><img src="/Public/images/phiz/taikaixin.gif" alt="太开心" title="太开心" /></li>
+            <li><img src="/Public/images/phiz/ldln.gif" alt="懒得理你" title="懒得理你" /></li>
+            <li><img src="/Public/images/phiz/youhenhen.gif" alt="右哼哼" title="右哼哼" /></li>
+            <li><img src="/Public/images/phiz/zuohenhen.gif" alt="左哼哼" title="左哼哼" /></li>
+            <li><img src="/Public/images/phiz/xiu.gif" alt="嘘" title="嘘" /></li>
+            <li><img src="/Public/images/phiz/shuai.gif" alt="衰" title="衰" /></li>
+            <li><img src="/Public/images/phiz/weiqu.gif" alt="委屈" title="委屈" /></li>
+            <li><img src="/Public/images/phiz/tu.gif" alt="吐" title="吐" /></li>
+            <li><img src="/Public/images/phiz/dahaqian.gif" alt="打哈欠" title="打哈欠" /></li>
+            <li><img src="/Public/images/phiz/baobao.gif" alt="抱抱" title="抱抱" /></li>
+            <li><img src="/Public/images/phiz/nu.gif" alt="怒" title="怒" /></li>
+            <li><img src="/Public/images/phiz/yiwen.gif" alt="疑问" title="疑问" /></li>
+            <li><img src="/Public/images/phiz/canzui.gif" alt="馋嘴" title="馋嘴" /></li>
+            <li><img src="/Public/images/phiz/baibai.gif" alt="拜拜" title="拜拜" /></li>
+            <li><img src="/Public/images/phiz/sikao.gif" alt="思考" title="思考" /></li>
+            <li><img src="/Public/images/phiz/han.gif" alt="汗" title="汗" /></li>
+            <li><img src="/Public/images/phiz/kun.gif" alt="困" title="困" /></li>
+            <li><img src="/Public/images/phiz/shuijiao.gif" alt="睡觉" title="睡觉" /></li>
+            <li><img src="/Public/images/phiz/qian.gif" alt="钱" title="钱" /></li>
+            <li><img src="/Public/images/phiz/shiwang.gif" alt="失望" title="失望" /></li>
+            <li><img src="/Public/images/phiz/ku.gif" alt="酷" title="酷" /></li>
+            <li><img src="/Public/images/phiz/huaxin.gif" alt="花心" title="花心" /></li>
+            <li><img src="/Public/images/phiz/heng.gif" alt="哼" title="哼" /></li>
+            <li><img src="/Public/images/phiz/guzhang.gif" alt="鼓掌" title="鼓掌" /></li>
+            <li><img src="/Public/images/phiz/yun.gif" alt="晕" title="晕" /></li>
+            <li><img src="/Public/images/phiz/beishuang.gif" alt="悲伤" title="悲伤" /></li>
+            <li><img src="/Public/images/phiz/zuakuang.gif" alt="抓狂" title="抓狂" /></li>
+            <li><img src="/Public/images/phiz/heixian.gif" alt="黑线" title="黑线" /></li>
+            <li><img src="/Public/images/phiz/yinxian.gif" alt="阴险" title="阴险" /></li>
+            <li><img src="/Public/images/phiz/numa.gif" alt="怒骂" title="怒骂" /></li>
+            <li><img src="/Public/images/phiz/xin.gif" alt="心" title="心" /></li>
+            <li><img src="/Public/images/phiz/shuangxin.gif" alt="伤心" title="伤心" /></li>
         </ul>
     </div>
 <!--==========表情==========-->

@@ -1,0 +1,51 @@
+[ 2016-09-17T08:06:31+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.040025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.041118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.041201s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:0.0829s ]
+SQL: SELECT `id`,`lock` FROM `wb_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0333s ]
+SQL: SHOW COLUMNS FROM `wb_follow` [ RunTime:0.0399s ]
+SQL: SELECT `follow` FROM `wb_follow` WHERE `fans` = 2  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wb_weibo` [ RunTime:0.0201s ]
+SQL: SHOW COLUMNS FROM `wb_userinfo` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `wb_picture` [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid LEFT JOIN wb_picture picture ON weibo.id = picture.wid WHERE weibo.uid IN ('2') LIMIT 1   [ RunTime:0.0244s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.time AS time,weibo.keep AS keep,weibo.turnnum AS turnnum,weibo.comment AS comment,weibo.uid AS uid,userinfo.username AS username,userinfo.headimgs AS face,picture.mini AS mini,picture.medium AS medium,picture.max AS max FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid LEFT JOIN wb_picture picture ON weibo.id = picture.wid WHERE weibo.uid IN ('2') ORDER BY weibo.time desc LIMIT 0,20   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.020223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.020314s ]
+SQL: SELECT `style` FROM `wb_userinfo` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `username` FROM `wb_userinfo` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wb_group` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `wb_group` WHERE `uid` = 2  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wb_group` WHERE `uid` = 2  [ RunTime:0.0003s ]
+SQL: SELECT `username`,`headimgm` AS `face`,`follow`,`fans`,`article`,`uid` FROM `wb_userinfo` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `follow` FROM `wb_follow` WHERE `fans` = 2  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: friend F:\weibo\Index\Runtime\Cache\Home\20ef0c31aa8ae73946d7fed8083ca825.php 第 442 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\weibo\Index\Runtime\Cache\Home\20ef0c31aa8ae73946d7fed8083ca825.php 第 442 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.530447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.530521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.040586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.040670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.040198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.040276s ]
+
+[ 2016-09-17T08:06:34+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021686s ]
+NOTIC: [8] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+NOTIC: [2] Memcache::connect():  F:\weibo\thinkphp\Library\Think\Cache\Driver\Memcache.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018935s ]
+

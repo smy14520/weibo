@@ -1,5 +1,5 @@
 .main{
-	background: url(../Images/main_bg2.png) repeat-y;
+	background: url(../images/main_bg2.png) repeat-y;
 }
 /*****左侧*****/
 #left{
@@ -200,7 +200,7 @@
 	height: 61px;
 	margin: 0 auto;
 	margin-top: 20px;
-	background : url(../Images/sech_logo.png) no-repeat left;
+	background : url(../images/sech_logo.png) no-repeat left;
 }
 
 #content {

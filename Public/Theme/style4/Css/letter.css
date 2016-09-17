@@ -228,7 +228,7 @@
 #middle dl .comment_list .phiz{
 	width:15px;
 	height:15px;
-	background:url(../Images/icon.png) no-repeat -250px 0px;
+	background:url(../images/icon.png) no-repeat -250px 0px;
 	margin-top:3px;
 	cursor: pointer;
 	margin-right: 10px;
@@ -397,7 +397,7 @@
 	font-weight: bold;
 	text-align: center;
 	line-height:30px;
-	background:url(../Images/line.png) no-repeat 0 -107px #fafafa;
+	background:url(../images/line.png) no-repeat 0 -107px #fafafa;
 	margin-left: 20px;
 }
 #right .post ul{

@@ -52,7 +52,7 @@ class CommonController extends Controller {
 
        $width  = array(180,100,50);         // 图片缩略图宽度
        $height = array(180,100,50);         // 图片缩略图高度
-       $upload = $this->_upload('face/',$width,$height);
+       $upload = $this->_upload('Face/',$width,$height);
        echo json_encode($upload);
 
     }

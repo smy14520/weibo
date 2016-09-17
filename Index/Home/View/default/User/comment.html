@@ -23,7 +23,7 @@
         <foreach name='comment' item='v'>
 			<dl>
 				<dt>
-					<a href="{:U('/' . $v['uid'])}"><img src="<if condition='$v["face"]'>__ROOT__/Uploads/Face/{$v.face}<else/>__PUBLIC__/Images/noface.gif</if>" width='50' height='50'/></a>
+					<a href="{:U('/' . $v['uid'])}"><img src="<if condition='$v["face"]'>__ROOT__/Uploads/Face/{$v.face}<else/>__PUBLIC__/images/noface.gif</if>" width='50' height='50'/></a>
 				</dt>
 				<dd>
 					<a href="{:U('/' . $v['uid'])}">{$v.username}</a>：

@@ -69,9 +69,9 @@ class UserSettingController extends CommonController {
         {
             if(!empty($old['headimgb']))
             {
-                @unlink('./Upload/face/' . $old['headimgb']);
-                @unlink('./Upload/face/' . $old['headimgs']);
-                @unlink('./Upload/face/' . $old['headimgm']);
+                @unlink('./Upload/Face/' . $old['headimgb']);
+                @unlink('./Upload/Face/' . $old['headimgs']);
+                @unlink('./Upload/Face/' . $old['headimgm']);
             }
             $this->error('修改成功');
         }

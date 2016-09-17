@@ -27,7 +27,7 @@
 		<div class='info-list'>
 			<div class='info-face'>
 				<p>
-					<img src="<if condition='$userinfo["headimgb"]'>__ROOT__/Uploads/Face/{$userinfo.headimgb}<else/>__PUBLIC__/Images/noface.gif</if>" width='180' height='180' alt="{$userinfo.username}" />
+					<img src="<if condition='$userinfo["headimgb"]'>__ROOT__/Uploads/Face/{$userinfo.headimgb}<else/>__PUBLIC__/images/noface.gif</if>" width='180' height='180' alt="{$userinfo.username}" />
 				</p>
 				<ul>
 					<li>
@@ -174,7 +174,7 @@
                     </div>
                 <!--=====回复框=====-->
                     <div class='comment_load hidden'>
-                        <img src="__PUBLIC__/Images/loading.gif">评论加载中，请稍候...
+                        <img src="__PUBLIC__/images/loading.gif">评论加载中，请稍候...
                     </div>
                     <div class='comment_list hidden'>
                         <textarea name="" sign='comment{$key}'></textarea>
@@ -283,7 +283,7 @@
                     </div>
                     <!--回复框-->
                     <div class='comment_load hidden'>
-                        <img src="__PUBLIC__/Images/loading.gif">评论加载中，请稍候...
+                        <img src="__PUBLIC__/images/loading.gif">评论加载中，请稍候...
                     </div>
                     <div class='comment_list hidden'>
                         <textarea name="" sign='comment{$key}'></textarea>
@@ -314,7 +314,7 @@
                 <foreach name='follow' item='v'>
         		<dd>
         			<a href="{:U('/' . $v['uid'])}">
-        				<img src="<if condition='$v["face"]'>__ROOT__/Uploads/Face/{$v.face}<else/>__PUBLIC__/Images/noface.gif</if>" alt="{$v.username}" width='50' height='50'/>
+        				<img src="<if condition='$v["face"]'>__ROOT__/Uploads/Face/{$v.face}<else/>__PUBLIC__/images/noface.gif</if>" alt="{$v.username}" width='50' height='50'/>
         			</a>
         			<p>
         				<a href="{:U('/' . $v['uid'])}">{$v.username}</a>
@@ -327,7 +327,7 @@
                 <foreach name='fans' item='v'>
         		<dd>
         			<a href="{:U('/' . $v['uid'])}">
-        				<img src="<if condition='$v["face"]'>__ROOT__/Uploads/Face/{$v.face}<else/>__PUBLIC__/Images/noface.gif</if>" alt="{$v.username}" width='50' height='50'/>
+        				<img src="<if condition='$v["face"]'>__ROOT__/Uploads/Face/{$v.face}<else/>__PUBLIC__/images/noface.gif</if>" alt="{$v.username}" width='50' height='50'/>
         			</a>
         			<p>
         				<a href="{:U('/' . $v['uid'])}">{$v.username}</a>
