@@ -80,7 +80,7 @@ function  replace_weibo ($content)
     $preg = '/\[(\S+?)\]/is';
     preg_match_all($preg,$content,$arr);
     //引入表情数组
-    $phiz = include './Public/Data/phiz.php';
+    $phiz = include './Public/data/phiz.php';
     if($arr[1])
     {
         foreach($arr[1] as $k => $v)
@@ -89,7 +89,7 @@ function  replace_weibo ($content)
             $name = array_search($v,$phiz);
             if($name)
             {
-                $content = str_replace($arr[0][$k],'<img src="'.__ROOT__.'/Public/Images/phiz/'.$name.'.gif" title
+                $content = str_replace($arr[0][$k],'<img src="'.__ROOT__.'/Public/images/phiz/'.$name.'.gif" title
                 ="'. $v . '"
                 />',$content);
             }
