@@ -110,7 +110,7 @@ class CommonController extends Controller {
 
         if (!$info)
         {
-            return array('status' => 0, 'msg' => $info->getError());
+            return array('status' => 0, 'msg' => $obj->getError());
 
         }
         else
