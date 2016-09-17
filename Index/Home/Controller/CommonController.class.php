@@ -99,7 +99,7 @@ class CommonController extends Controller {
         'autoSub'    =>   true,                                  // 自动子目录
         'subName'    =>   array('date','Y-m-d'),                 // 设置子目录格式
     );
-
+     
 
         //生成缩略图
         $obj   =  new \Think\Upload($config);                      // 实例化上传类

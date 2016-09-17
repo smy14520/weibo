@@ -155,7 +155,7 @@
 #middle .send_wrap .send_title{
 	width:200px;
 	height:22px;
-	background: url(../Images/send_weibo.png) no-repeat;
+	background: url(../images/send_weibo.png) no-repeat;
 }
 #middle .send_wrap .send_prompt{
 	width:360px;
@@ -192,7 +192,7 @@
 	width:12px;
 	width:12px;
 	height:19px;
-	background: url(../Images/send_weibo.png) no-repeat 0 -69px;
+	background: url(../images/send_weibo.png) no-repeat 0 -69px;
 	position:absolute;
 	top:60px;
 	left:559px;
@@ -248,7 +248,7 @@
 	display: block;
 	width:16px;
 	height:16px;
-	background:url(../Images/icon.png) no-repeat -75px -200px;
+	background:url(../images/icon.png) no-repeat -75px -200px;
 	float: right;
 	margin: 7px 5px;
 	cursor: pointer;
@@ -263,7 +263,7 @@
 	width:82px;
 	height:30px;
 	border:0;
-	background: url(../Images/send_weibo.png) no-repeat -50px -50px;
+	background: url(../images/send_weibo.png) no-repeat -50px -50px;
 	cursor: pointer;
 }
 
@@ -271,7 +271,7 @@
 #middle .view_line{
 	width:560px;
 	height:30px;
-	background:url(../Images/line.png) repeat-x 0 28px;
+	background:url(../images/line.png) repeat-x 0 28px;
 	margin-bottom: 20px;
 }
 #middle .view_line strong{

@@ -286,7 +286,7 @@ input[type="password"]:focus {
 #copy div{
 	height: 33px;
 	margin: 0 auto;
-	background: url(../Images/bottom_logo.gif) no-repeat;
+	background: url(../images/bottom_logo.gif) no-repeat;
 	padding: 10px 0;
 }
 #copy div p{
@@ -304,7 +304,7 @@ input.valid {
 	border:1px solid #1d95f6;
 }
 span.error{
-	background : url(../Images/unchecked.gif) no-repeat 0 0;
+	background : url(../images/unchecked.gif) no-repeat 0 0;
 	padding-left: 16px;
 	color: #f00;
 }

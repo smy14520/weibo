@@ -212,7 +212,7 @@
 #content .view_line{
 	width:700px;
 	height:30px;
-	background:url(../Images/line.png) repeat-x 0 28px;
+	background:url(../images/line.png) repeat-x 0 28px;
 	margin-bottom: 20px;
 }
 #content .view_line strong{
@@ -221,7 +221,7 @@
 	height:30px;
 	line-height:30px;
 	text-align: center;
-	background: url(../Images/line.png) no-repeat 0 -45px #FAFAFA;
+	background: url(../images/line.png) no-repeat 0 -45px #FAFAFA;
 	margin-left: 10px;
 }
 #content ul {

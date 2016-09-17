@@ -61,7 +61,7 @@ $(function () {
 		onUploadSuccess : function (file, data, response) {
 			eval('var data = ' + data);
 			if (data.status) {
-				$('#face-img').attr('src', ROOT + '/Uploads/face/' + data.path.max);
+				$('#face-img').attr('src', ROOT + '/Uploads/Face/' + data.path.max);
 				$('input[name=headimgb]').val(data.path.max);
 				$('input[name=headimgm]').val(data.path.medium);
 				$('input[name=headimgs]').val(data.path.mini);
