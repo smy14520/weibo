@@ -79,7 +79,7 @@ select option {
 	float: left;
 	margin : 0 10px;
 	cursor: pointer;
-	background : url(../Images/addBtn.png) no-repeat;
+	background : url(../images/addBtn.png) no-repeat;
 }
 .add_cur {
 	background-position: 0 -26px;
@@ -116,7 +116,7 @@ select option {
 	width:61px;
 	height:26px;
 	margin:0 2px;
-	background:url(../Images/btn.png) no-repeat 0 0;
+	background:url(../images/btn.png) no-repeat 0 0;
 	border: none;
 	cursor: pointer;
 }
@@ -125,7 +125,7 @@ select option {
 	width:80px;
 	height:26px;
 	margin:0 2px;
-	background:url(../Images/add-cld.png) no-repeat 0 0;	
+	background:url(../images/add-cld.png) no-repeat 0 0;
 }
 .big-btn {
 	width : 184px;
@@ -136,7 +136,7 @@ select option {
 	color : #FFFFFF;
 	display: block;
 	margin: 20px auto;
-	background : url(../Images/big-btn.png) no-repeat;
+	background : url(../images/big-btn.png) no-repeat;
 	cursor: pointer;
 }
 .edit {
@@ -144,23 +144,23 @@ select option {
 	width:61px;
 	height:26px;
 	margin:0 2px;
-	background:url(../Images/btn.png) no-repeat 0 -26px;
+	background:url(../images/btn.png) no-repeat 0 -26px;
 }
 .del {
 	display: inline-block;
 	width:61px;
 	height:26px;
 	margin:0 2px;
-	background:url(../Images/btn.png) no-repeat 0 -52px;
+	background:url(../images/btn.png) no-repeat 0 -52px;
 }
 .up {
-	background: url(../Images/up.png) no-repeat 0px 16px;
+	background: url(../images/up.png) no-repeat 0px 16px;
 }
 .down {
-	background: url(../Images/down.png) no-repeat 0px 16px;
+	background: url(../images/down.png) no-repeat 0px 16px;
 }
 .cur_list {
-	background:url(../Images/list.png) no-repeat 0 7px #f6f6f6;
+	background:url(../images/list.png) no-repeat 0 7px #f6f6f6;
 }
 .red {
 	color : #f00;

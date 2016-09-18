@@ -155,7 +155,7 @@
 #middle .send_wrap .send_title{
 	width:200px;
 	height:22px;
-	background: url(../Images/send_weibo.png) no-repeat;
+	background: url(../images/send_weibo.png) no-repeat;
 }
 #middle .send_wrap .send_prompt{
 	width:360px;
@@ -192,7 +192,7 @@
 	width:12px;
 	width:12px;
 	height:19px;
-	background: url(../Images/send_weibo.png) no-repeat 0 -69px;
+	background: url(../images/send_weibo.png) no-repeat 0 -69px;
 	position:absolute;
 	top:60px;
 	left:559px;
@@ -248,7 +248,7 @@
 	display: block;
 	width:16px;
 	height:16px;
-	background:url(../Images/icon.png) no-repeat -75px -200px;
+	background:url(../images/icon.png) no-repeat -75px -200px;
 	float: right;
 	margin: 7px 5px;
 	cursor: pointer;
@@ -263,7 +263,7 @@
 	width:82px;
 	height:30px;
 	border:0;
-	background: url(../Images/send_weibo.png) no-repeat -50px -50px;
+	background: url(../images/send_weibo.png) no-repeat -50px -50px;
 	cursor: pointer;
 }
 
@@ -271,7 +271,7 @@
 #middle .view_line{
 	width:560px;
 	height:30px;
-	background:url(../Images/line.png) repeat-x 0 28px;
+	background:url(../images/line.png) repeat-x 0 28px;
 	margin-bottom: 20px;
 }
 #middle .view_line strong{
@@ -280,7 +280,7 @@
 	height:30px;
 	line-height:30px;
 	text-align: center;
-	background: url(../Images/line.png) no-repeat 0 -45px #FAFAFA;
+	background: url(../images/line.png) no-repeat 0 -45px #FAFAFA;
 	margin-left: 10px;
 }
 #middle .weibo{
@@ -322,7 +322,7 @@
 	margin:10px 0;
 }
 #middle .weibo .wb_img .mini_img{
-	cursor: url(../Images/big.cur), auto !important;
+	cursor: url(../images/big.cur), auto !important;
 }
 #middle .weibo .wb_img .img_tool{
 	width:448px;
@@ -350,7 +350,7 @@
 #middle .weibo .wb_img .img_info img{
 	display:block;
 	margin:0 auto;
-	cursor: url(../Images/small.cur), auto !important;
+	cursor: url(../images/small.cur), auto !important;
 }
 #middle .weibo .wb_tool{
 	width:490px;
@@ -424,7 +424,7 @@
 #middle .weibo .comment_list .phiz{
 	width:15px;
 	height:15px;
-	background:url(../Images/icon.png) no-repeat -250px 0px;
+	background:url(../images/icon.png) no-repeat -250px 0px;
 	margin-top:3px;
 	cursor: pointer;
 	margin-right: 10px;
@@ -524,7 +524,7 @@
 	margin:10px 0;
 }
 #middle .weibo .wb_turn .turn_img img{
-	cursor: url(../Images/big.cur), auto !important;
+	cursor: url(../images/big.cur), auto !important;
 }
 #middle .weibo .turn_tool{
 	width:448px;
@@ -570,7 +570,7 @@
 #middle .weibo .turn_img .turn_img_info img{
 	display:block;
 	margin:0 auto;
-	cursor: url(../Images/small.cur), auto !important;
+	cursor: url(../images/small.cur), auto !important;
 }
 #page {
 	width: 100%;
@@ -597,7 +597,7 @@
 	float: right;
 	width: 20px;
 	height:20px;
-	background:url(../Images/send_weibo.png) no-repeat -280px 0px;
+	background:url(../images/send_weibo.png) no-repeat -280px 0px;
 }
 
 #right .edit_tpl a:hover{
@@ -729,7 +729,7 @@
 	font-weight: bold;
 	text-align: center;
 	line-height:30px;
-	background:url(../Images/line.png) no-repeat 0 -107px #fafafa;
+	background:url(../images/line.png) no-repeat 0 -107px #fafafa;
 	margin-left: 20px;
 }
 #right .post ul{

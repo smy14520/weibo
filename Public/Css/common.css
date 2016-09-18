@@ -31,7 +31,7 @@ input,textarea,select,button{
 	height:auto;
 	overflow: hidden;
 	margin:0 auto;
-	background: url(../Images/main_bg.png) repeat-y;
+	background: url(../images/main_bg.png) repeat-y;
 }
 .fleft{
 	float:left;

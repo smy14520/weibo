@@ -309,6 +309,6 @@ span.error{
 	color: #f00;
 }
 span.success{
-	background : url(../Images/checked.gif) no-repeat 0 0;
+	background : url(../images/checked.gif) no-repeat 0 0;
 	padding-left: 16px;
 }

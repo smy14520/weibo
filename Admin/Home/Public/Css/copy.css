@@ -9,7 +9,7 @@ body {
 	border: 1px solid #ccc;
 	border-radius: 8px;
 	margin: 10px auto;
-	background: url(../Images/copy.jpg) no-repeat;
+	background: url(../images/copy.jpg) no-repeat;
 	display: none;
 }
 #main dl {

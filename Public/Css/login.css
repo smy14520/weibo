@@ -5,12 +5,12 @@ body{
 }
 #top-bg{
 	height: 166px;
-	background: url(../Images/login_top_bg.png) no-repeat center;
+	background: url(../images/login_top_bg.png) no-repeat center;
 	margin: 0 auto;
 }
 #login-form {
 	height: 452px;
-	background: url(../Images/login_bg_fom.png) no-repeat center;
+	background: url(../images/login_bg_fom.png) no-repeat center;
 	margin: 0 auto;
 }
 #login-wrap{

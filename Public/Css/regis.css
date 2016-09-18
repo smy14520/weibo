@@ -1,12 +1,12 @@
 @import './common.css';
 
 body{
-	background: url(../Images/regis_bg.png) repeat-x #C8E1F0;
+	background: url(../images/regis_bg.png) repeat-x #C8E1F0;
 }
 #logo{
 	width: 780px;
 	height: 38px;
-	background: url(../Images/logo.png) no-repeat;
+	background: url(../images/logo.png) no-repeat;
 	margin: 20px auto;
 }
 #reg-wrap{
@@ -93,11 +93,11 @@ input.valid {
 	border:1px solid #1d95f6;
 }
 span.error{
-	background : url(../Images/unchecked.gif) no-repeat 0 0;
+	background : url(../images/unchecked.gif) no-repeat 0 0;
 	padding-left: 16px;
 	color: #f00;
 }
 span.success{
-	background : url(../Images/checked.gif) no-repeat 0 0;
+	background : url(../images/checked.gif) no-repeat 0 0;
 	padding-left: 16px;
 }
