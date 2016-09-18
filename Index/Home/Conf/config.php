@@ -40,6 +40,10 @@ return array(
 	'MEMCACHE_PORT'     =>  11211,
 
 
-	'LOAD_EXT_CONFIG' =>'system,filtrate',
+	'LOAD_EXT_CONFIG' =>'system,filtrate',       //加载配置文件
+
+
+	'TMPL_ACTION_ERROR'     =>  MODULE_PATH.'View/error/error.htm', // 默认错误跳转对应的模板文件
+	'TMPL_ACTION_SUCCESS'   =>  MODULE_PATH.'View/error/success.htm' // 默认成功跳转对应的模板文件
 
 );

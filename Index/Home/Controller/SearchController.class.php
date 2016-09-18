@@ -32,6 +32,7 @@ class SearchController extends CommonController
             $show   = $Page->show();                             // 分页类的显示
             $result = $db->where($where)->field($field)->order('uid')->limit($Page->firstRow.','.$Page->listRows)->select();
 
+
             //判断是否已经关注
             $result = $this->_getMutual($result);
 
